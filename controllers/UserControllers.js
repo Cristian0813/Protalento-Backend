@@ -7,6 +7,7 @@ module.exports={
             .then(results=>res.status(201).json(results))
             .catch(err=>res.status(500).json(err))
     },
+    //GET SE TREA ALGO Y LO RESUELVECON UNA PROMESA
     getOneUser: (req, res)=>{
         let {id} = req.params
         UserModels
@@ -14,6 +15,7 @@ module.exports={
             .then(results=>res.status(201).json(results))
             .catch(err=>res.status(500).json(err))
     },
+    // SE EL USUARO EN MODELS
     createUser:(req, res)=>{
         const {body}= req
         UserModels
@@ -21,6 +23,7 @@ module.exports={
             .then(results=>res.status(201).json(results))
             .catch(err=>res.status(500).json(err))
     },
+    //SE 
     updateUser:(req, res)=>{
         const {body}= req
         const {id}=req.params

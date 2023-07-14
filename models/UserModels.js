@@ -1,6 +1,6 @@
 const conecction = require('../knexfile')['development']
 const db = require('knex')(conecction)
-
+//SE CREA EL MODELO DE LA BASE DE DATOS
 module.exports={
     getAllUserModel:()=>{
         return db('users')

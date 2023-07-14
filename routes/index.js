@@ -1,0 +1,9 @@
+//AQUI SE EXPORTA LAS RUTAS
+
+const UserRoutes=require ('./UserRoutes')
+const ApiRoutes=require ('./ApiRoutes')
+
+module.exports={
+    UserRoutes,
+    ApiRoutes
+}
